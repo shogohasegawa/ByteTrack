@@ -1,0 +1,19 @@
+[project]
+name = "bytetrack"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "shogo.hasegawa", email = "shogo.hasegawa@ariseanalytics.com" }
+]
+requires-python = ">=3.10"
+dependencies = [
+    "cython-bbox>=0.1.5",
+    "lapx>=0.5.11.post1", # lapをベースとしていてカバー範囲も広いライブラリ
+    "scipy",
+    "torch==2.0.1",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
